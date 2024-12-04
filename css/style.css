@@ -1,3 +1,17 @@
+/*Universal css*/
+h1 {
+    color: #d81d28;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 65px;
+}
+
+h2 {
+    color: #d81d28;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 45px;
+}
+
+/*Grids for each side*/
 indexGrid{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -10,12 +24,35 @@ indexGrid{
     ;
 }
 
-header{
+/*Index side*/
+#i1 {
+    grid-area: s1;
+
+    background-image: url(/img/stock/gym1.jpg);
+    backdrop-filter: b;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#i1search{
+    width: 500px;
+    height: 50px;
+
+    padding-left: 20px;
+    border-radius: 20px;
+    border: none;
+
+    font-size: 36px;
+}
+
+/*Header & footer same on each side*/
+header { 
     grid-area: hd;
 
     background-color: #e74c3c;
-
-    border-bottom: 5px black solid;
 
     display: flex;
     justify-content: space-around;
@@ -23,16 +60,33 @@ header{
 
 .hDiv {
     display: inline-flex;
-    align-items: center; /* Center .hIcon and .hTitle vertically*/
-    gap: 40px; /* Space between .hIcon and .hTitle */
+    align-items: center; /* Center .hIcon and h1 vertically*/
+    gap: 40px; /* Space between .hIcon and h1*/
+}
+
+.hTitle {
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 45px;
 }
 
 .hIcon {
     height: 80%;
 }
 
-.hTitle {
-    color: rgb(30, 30, 30);
+footer {
+    grid-area: ft;
+
+    background-color: #e74c3c;
+
+    display: flex;
+    justify-content: space-around;
+
+    align-items: center;
+}
+
+.fTitle {
+    color: rgb(255, 255, 255);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 45px;
+    font-size: 36px;
 }
