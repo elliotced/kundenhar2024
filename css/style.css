@@ -198,6 +198,8 @@ header {
 .hTitle {
     color: rgb(255, 255, 255);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
     font-size: 45px;
 }
 
